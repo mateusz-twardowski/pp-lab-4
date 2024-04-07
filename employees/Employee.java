@@ -1,3 +1,5 @@
+package employees;
+
 public class Employee {
   private String fullName;
   private double salary;
@@ -20,6 +22,6 @@ public class Employee {
   }
 
   public String toString() {
-    return String.format(" Employee: %s, Salary: %f.", this.getName(), this.getSalary());
+    return String.format("Employee: %s, Salary: %f.", this.getName(), this.getSalary());
   }
 }
