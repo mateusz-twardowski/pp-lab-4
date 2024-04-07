@@ -12,6 +12,16 @@ public class Company {
     Employees[3] = new Employee("Pam Beesly", 4976.50);
     Employees[4] = new Worker("Kevin Malone", 5230.92, "Accounting");
 
+    int count = 0;
+    for (Employee employee : Employees) {
+      if (!(employee instanceof Manager)) {
+        count++;
+      }
+    }
+
+    ((Manager) Employees[0]).setNumberOfSubordinates(count);
+    Employees[0].setSalary(7500);
+
     for (Employee employee : Employees) {
       System.out.println(employee);
     }
